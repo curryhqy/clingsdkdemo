@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hicling.clingsdkdemo.MainActivity$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/signinup_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left|center_vertical"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:hint="email address only"
+		 />
+    
+    <EditText
+        android:id="@+id/signinup_password1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/signinup_username"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left|center_vertical"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:hint="password"
+		 />
+
+    <EditText
+        android:id="@+id/signinup_password2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/signinup_password1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left|center_vertical"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:hint="password again(signup only)"
+		 />
+
+    <Button 
+        android:id="@+id/signin_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/signinup_password2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Sign In"
+        />
+
+    <Button 
+        android:id="@+id/signup_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/signinup_password2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        />
+    
+</RelativeLayout>
